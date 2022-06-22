@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "es2019",
+    "module": "es2015",
+    "sourceMap": true,
+    "baseUrl": "src",
+    "lib": ["es2020", "DOM", "DOM.Iterable"],
+    "declaration": true,
+    "outDir": "dist",
+    "rootDirs": ["src"],
+    "removeComments": true,
+    "emitDeclarationOnly": true,
+    "isolatedModules": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitOverride": true,
+    "plugins": [
+      {
+        "strict": true,
+        "typescript": {
+          "compilerOptions": {
+            "lib": ["es5", "es6", "dom"],
+            "target": "es5"
+          }
+        }
+      }
+    ]
+  },
+  "include": ["packages/**/*.ts"],
+  "exclude": [
+    "dist",
+    "packages/**/*.md",
+    "node_modules",
+    "rollup.config.ts",
+    "packages/**/*.stories.ts"
+  ]
+}
